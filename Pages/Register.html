@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link    rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .image-section {
+            flex: 2;
+            background-image: url(https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_1200,g_auto/f_auto/q_auto/v1/huy-phan-y4U1eKczOEo-unsplash_us_non-editorial_mcqmrl?_a=BAVAZGE70);
+            background-size: cover;
+        }
+
+        .form-section {
+            flex: 1;
+            background-color: red;
+            color: #fff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+        }
+
+        legend {
+            color: #ccc;
+            padding-bottom: 10px;
+        }
+
+        .book-btn {
+            background-color: goldenrod;
+            color: #333;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navabar-expand-lg navbar-light bg-light mb-2">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <a class="navbar-brand" href="Register.html">Register</a>
+        <a class="navbar-brand" href="contactUs.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <div class="image-section"></div>
+        <div class="form-section">
+            <h1>Register For An Account</h1>
+            <form action="" id="signupForm">
+             <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Username"
+                />
+             <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                />
+             <input 
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"  
+              /> 
+             <input
+                type="confirm password"
+                id="confirm password"
+                name="confirm password"
+                placeholder="Confirm Password"
+                />
+                <form action="dropdown">
+                    <label for="How">How did you hear about us?</label>
+                    <select id="How" name="How">
+                        <option value="TikTok">Tiktok</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Google">Google</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </form>
+              <button type="submit" class="book-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
